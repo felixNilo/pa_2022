@@ -6,3 +6,5 @@
     color:green; 
     text-decoration:none;
 }
+
+.destacado { background-color: orange; font-weight:bold; font-size:100%; }
