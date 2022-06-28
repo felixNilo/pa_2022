@@ -1,5 +1,8 @@
-/* Comentario en CSS estilos */
-#menu1{
+#menu1 {
     color:green;
     background-color: DarkGray;
+}
+#menu1 a {
+    color:green; 
+    text-decoration:none;
 }
