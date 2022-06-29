@@ -11,19 +11,19 @@
 
 <body>
     <!-- Cabecera de la página web -->
-    <div>
+    <div id="cabecera">
         <h1>Portal web</h1>
         <h2>Programacion de aplicaciones</h2>
     </div>
     <!-- Fin de la cabecera de la página web -->
     <br />
     <!-- Contenedor para la parte central -->
-    <div>
+    <div id="central">
         <!-- menu -->
-        <div>
-            <div id="menu1">Menú
+        <div id="menu">
+            <div class="txtPresentaMenu">Menú
             <hr />
-            <ul>
+            <ul class="itemsMenu">
                 <li><a href="#">Inicio</a></li>
                 <li> <a href="libros.html">Libros de programación</a> </li>
                 <li> <a href="cursos.html">Cursos de programación</a> </li>
@@ -32,9 +32,9 @@
         </div>
         <!-- fin menu -->
         <!-- cuerpo -->
-        <div>
+        <div id="cuerpoCentral">
             <!-- Texto con imágenes -->
-            <div>
+            <div class="txtConImg">
                 <p class="destacado">Aprender a programar es un objetivo que se plantea mucha gente y que no todos alcanzan.</p>
                 <p>Hay que tener claro que <a href="http://www.google.com">aprender programación</a> no es
                     tarea de un día ni de una semana: aprender programación requiere al menos varios meses y, si
@@ -53,14 +53,21 @@
             <!-- Fin del texto con imágenes -->
             <br />
             <!-- Formulario de contacto -->
-            <form method="get" action="accion.html"> Si quieres contactar con nosotros envíanos este formulario relleno:
-                <br /><br /> Nombre: <input type="text" name="nombre" /><br /> Apellidos: <input type="text"
-                    name="apellidos" /><br /> Dirección: <input type="text" name="direccion" /><br /> Correo
-                electrónico: <input type="text" name="correo" /><br /> Mensaje: <textarea name="mensaje" cols=30
-                    rows=2></textarea><br /><br />
+            <form name ="formularioContacto" class="formularioTipo1" method="get" action="accion.html">
+                <div class="form-content">
+                <h2>Formulario de contacto</h2>
+                <p>Si quieres contactar con nosotros envíanos este formulario relleno:</p>
+                <label for="nombre"><span>Nombre:</span> <input id="nombre" type="text" name="nombre" placeholder="Tu nombre..." /></label>
+                <label for="apellidos"><span>Apellidos:</span> <input id="apellidos" type="text" name="apellidos" placeholder="Tus apellidos..."/></label>
+                <label for="direccion"><span>Dirección:</span> <input id="direccion" type="text" name="direccion" placeholder="Tu dirección..."/></label>
+                <label for="email"><span>Correo electrónico:</span> <input id="email" type="text" name="email" placeholder="Tu email..."/></label>
+                <label for="mensaje"><span>Mensaje:</span> <textarea id="mensaje" name="mensaje" cols=30 rows=2 placeholder="Tu mensaje..."></textarea></label>
+                <label>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Cancelar">
-            </form>
+                </label>
+                </div>
+                </form>
             <!-- Fin del formulario de contacto -->
         </div>
         <!-- fin cuerpo -->
@@ -68,8 +75,8 @@
     <!-- fin contenedor para la parte central -->
     <br /> <br /> <br />
     <!-- Pie de página o footer -->
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Logo_nuevo_ucen.png" alt="logo apr"
+    <div id="pieDePagina">
+        <img class="logoUcen"  src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Logo_nuevo_ucen.png" alt="logo apr"
             title="Logo UCEN"> Copyright 2022 Programacion de aplicaciones
     </div>
     <!-- Fin del pie de página o footer -->
